@@ -30,14 +30,26 @@ def print_error(error_text = 'An error occured!'):
     text = '___________________________________________________\n'
     print(colored(text, 'red', attrs = ['bold']))
 
+def print_colored_red(text = None):
+    
+    print(colored(text, 'red', attrs = ['bold']), end ='')
 
+def print_colored_green(text = None):
+    
+    print(colored(text, 'green', attrs = ['bold']), end ='')
+
+def print_colored_yellow(text = None):
+    
+    print(colored(text, 'yellow', attrs = ['bold']), end ='')
+
+
+  
 
 #EXAMPLE USAGE
 
 #print_error()
 #print_warning()
 #print_success()
-
 
 
 
