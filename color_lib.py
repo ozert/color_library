@@ -2,7 +2,7 @@
 #Credit : https://www.linkedin.com/in/ozer-tanrisever/
 
 from termcolor import colored, cprint
-
+from math import ceil
 
 def print_warning(warning_text = 'Warning => Things might go wrong!' ):
     text = '\n___________________________________________________\n'
