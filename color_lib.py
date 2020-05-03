@@ -56,12 +56,33 @@ def print_mix_colored_line(singleColorLength=0):
     print(colored(singleColorLength*'_', 'blue', attrs = ['bold']), end ='')
     print(colored(singleColorLength*'_', 'green', attrs = ['bold']), end ='\n')
     
+def titleMaker(textTuple,baseLineLength,lineType,firstColor,secondColor):
+
+    assert len(lineType)!=0 #At least a character should be given to produce a line
+    assert int(baseLineLength) > 0 # If raises error, the line below doesn't exists.
+    assert len(textTuple)==2 # If raises error, that means the tuple is not in correct form.
+    assert firstColor in ["blue","yellow", "red","green"] #Choose a color in this list.
+    assert secondColor  in ["blue","yellow", "red","green"] #Choose a color in this list.
+
+    formattedTextLength=(len(textTuple[0])+2+len(textTuple[1])+2+5)
+    beforeAndAfterSpace= ceil((baseLineLength-formattedTextLength)/2)
+
+    print(int(beforeAndAfterSpace-1)*' ',end='')
+    print(colored((formattedTextLength+1)*str(lineType),secondColor, attrs = ['bold']))
+    print(int(beforeAndAfterSpace-1)*' ',end='')
+    print(colored('| ',secondColor, attrs = ['bold']),end='')
+    print(colored('['+textTuple[0]+']: ',firstColor, attrs = ['bold']),end='')
+    print(colored('['+textTuple[1]+'] |',secondColor, attrs = ['bold']))
+    print(colored(baseLineLength*lineType,secondColor, attrs = ['bold']))
+
+    
 #EXAMPLE USAGE
 
 #print_error()
 #print_warning()
 #print_success()
 #print_mix_colored_line(5)
+#titleMaker(text,50,'-','green','yellow')
 
 
 
