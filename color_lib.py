@@ -51,17 +51,17 @@ def print_colored_blue(text = None):
 
 def print_mix_colored_line(singleColorLength=0):
     
-    print(colored(singleColorLength*'_', 'blue', attrs = ['bold']), end ='')
     print(colored(singleColorLength*'_', 'yellow', attrs = ['bold']), end ='')
-    print(colored(singleColorLength*'_', 'green', attrs = ['bold']), end ='')
     print(colored(singleColorLength*'_', 'red', attrs = ['bold']), end ='')
+    print(colored(singleColorLength*'_', 'blue', attrs = ['bold']), end ='')
+    print(colored(singleColorLength*'_', 'green', attrs = ['bold']), end ='')
     
 #EXAMPLE USAGE
 
 #print_error()
 #print_warning()
 #print_success()
-
+#print_mix_colored_line(5)
 
 
 
