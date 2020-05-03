@@ -50,7 +50,7 @@ def print_colored_blue(text = None):
     print(colored(text, 'blue', attrs = ['bold']), end ='')
 
 def print_mix_colored_line(singleColorLength=0):
-    
+    assert isinstance(singleColorLength, (int,)) #Cannot use other than int variable
     print(colored(singleColorLength*'_', 'yellow', attrs = ['bold']), end ='')
     print(colored(singleColorLength*'_', 'red', attrs = ['bold']), end ='')
     print(colored(singleColorLength*'_', 'blue', attrs = ['bold']), end ='')
