@@ -1,4 +1,4 @@
-# color_library [![HitCount](http://hits.dwyl.com/ozert/color_library.svg)](http://hits.dwyl.com/ozert/color_library)
+# color_library ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fozert%2Fcolor_library)
 This is a library for python3 console applications to perform ease of use for especially debugging.
 
 
